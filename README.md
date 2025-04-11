@@ -1,56 +1,72 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drogaria Menor Preço</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 20px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .button {
-      display: inline-block;
-      background-color: #25D366;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle, #ff4d4d, #990000);
       color: white;
-      padding: 15px 25px;
-      margin: 10px;
-      font-size: 18px;
-      border-radius: 8px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 900;
+      font-size: 2.5em;
+      margin-top: 40px;
+    }
+
+    .buttons {
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .buttons a {
+      background-color: #25d366;
+      color: white;
       text-decoration: none;
-      animation: shake 1.5s infinite;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
     }
-    .map-button {
-      background-color: #2ecc71;
-      animation: none;
+
+    .buttons a:hover {
+      background-color: #1ebe5d;
     }
-    @keyframes shake {
-      0% { transform: translateX(0); }
-      25% { transform: translateX(-4px); }
-      50% { transform: translateX(4px); }
-      75% { transform: translateX(-4px); }
-      100% { transform: translateX(0); }
+
+    .info {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .info p {
+      margin-bottom: 20px;
+      font-size: 1.1em;
     }
   </style>
 </head>
 <body>
+
   <h1>Drogaria Menor Preço</h1>
-  <p>Colônia Agrícola Samambaia CH 131 LOTE 2A LOJA 4 - Taguatinga, Brasília - DF, 72001-810</p>  <a class="button" href="https://wa.me/556185925725?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20com%20entrega." target="_blank">
-    WhatsApp (61) 8592-5725
-  </a>
-  <a class="button" href="https://wa.me/556133518138?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20com%20entrega." target="_blank">
-    WhatsApp (61) 3351-8138
-  </a>
-  <br>
-  <a class="button map-button" href="https://www.google.com/maps?q=Col%C3%B4nia+Agr%C3%ADcola+Samambaia+CH+131+LOTE+2A+LOJA+4+-+Taguatinga,+Bras%C3%ADlia+-+DF,+72001-810" target="_blank">
-    Ver no Google Maps
-  </a>
+
+  <div class="buttons">
+    <a href="https://wa.me/556185925725" target="_blank">WhatsApp (61) 8592-5725</a>
+    <a href="https://wa.me/556133518138" target="_blank">WhatsApp (61) 3351-8138</a>
+  </div>
+
+  <div class="info">
+    <p>Colônia Agrícola Samambaia CH 131, LOTE 2A LOJA 4 - Taguatinga, Brasília - DF, 72001-810</p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Colônia+Agrícola+Samambaia+CH+131+LOTE+2A+LOJA+4+Taguatinga+Brasília+DF+72001-810" target="_blank" style="background-color:#25d366; padding:12px 20px; border-radius:8px; color:white; font-weight:bold; text-decoration:none;">Ver no Google Maps</a>
+  </div>
+
 </body>
+</html>

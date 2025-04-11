@@ -1,4 +1,3 @@
-# Drogaria-Menor-Preço
 <!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -55,4 +54,3 @@
     Ver no Google Maps
   </a>
 </body>
-</html>
